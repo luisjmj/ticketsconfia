@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
+    use SoftDeletes;
     protected $dates = ['start_date', 'end_date', 'on_sale_date'];
 
     /**
