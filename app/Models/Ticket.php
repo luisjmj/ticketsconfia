@@ -12,6 +12,25 @@ class Ticket extends Model
     protected $dates = ['start_sale_date', 'end_sale_date'];
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array $fillable
+     */
+    protected $fillable = [
+        'event_id',
+        'title',
+        'description',
+        'price',
+        'max_per_person',
+        'min_per_person',
+        'quantity_available',
+        'quantity_sold',
+        'start_sale_date',
+        'end_sale_date',
+        'is_paused',
+    ];
+
+    /**
      * The rules to validate the model.
      *
      * @return array $rules
