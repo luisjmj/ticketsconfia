@@ -24,6 +24,22 @@ class Organiser extends Model
     ];
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array $fillable
+     */
+    protected $fillable = [
+        'name',
+        'about',
+        'email',
+        'phone',
+        'facebook',
+        'twitter',
+        'logo_path',
+        'is_email_confirmed',
+    ];
+
+    /**
      * The validation error messages for the model.
      *
      * @var array $messages

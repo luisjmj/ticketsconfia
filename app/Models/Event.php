@@ -12,6 +12,34 @@ class Event extends Model
     protected $dates = ['start_date', 'end_date', 'on_sale_date'];
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array $fillable
+     */
+    protected $fillable = [
+        'title',
+        'location',
+        'description',
+        'start_date',
+        'end_date',
+        'on_sale_date',
+        "currency",
+        'organiser_id',
+        'organiser_id',
+        'location_address',
+        'location_address_line_1',
+        'location_address_line_2',
+        'location_country',
+        'location_country_code',
+        'location_state',
+        'location_post_code',
+        'location_street_number',
+        'location_lat',
+        'location_long',
+        'location_google_place_id',
+    ];
+
+    /**
      * The validation rules.
      *
      * @return array $rules
